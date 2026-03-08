@@ -460,7 +460,121 @@
          SECTION 6 — CONTACT
     ══════════════════════════════════════ -->
     <section class="contact section section--alt" id="contact">
-      <!-- populated in Step 5 -->
+      <div class="container contact__inner">
+
+        <!-- Left: info -->
+        <div class="contact__info">
+          <span class="section-header__eyebrow">Get In Touch</span>
+          <h2 class="contact__title">Book Your Appointment</h2>
+          <div class="divider" style="margin: 0.75rem 0 1.5rem;"></div>
+          <p class="contact__lead">
+            Ready for a healthier, more confident smile? Fill out the form and
+            our team will confirm your appointment within 24 hours.
+          </p>
+
+          <ul class="contact__details">
+            <li>
+              <span class="contact__details-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <div>
+                <strong>Address</strong>
+                <span>14 Al-Nahda Street, Amman, Jordan</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact__details-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.33 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.49 5.49l1.92-1.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <div>
+                <strong>Phone</strong>
+                <span>+962 6 555 0192</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact__details-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <span>info@abukoush-dental.com</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact__details-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+              <div>
+                <strong>Opening Hours</strong>
+                <span>Sun &ndash; Thu: 9:00 AM &ndash; 7:00 PM</span>
+                <span>Fri &ndash; Sat: 10:00 AM &ndash; 3:00 PM</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="appointmentForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="fname" name="fname" placeholder="Yousef" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="lname" name="lname" placeholder="Abu Koush" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+962 7X XXX XXXX" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In <span aria-hidden="true">*</span></label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service&hellip;</option>
+                <option>General Dentistry</option>
+                <option>Teeth Whitening</option>
+                <option>Dental Implants</option>
+                <option>Orthodontics</option>
+                <option>Porcelain Veneers</option>
+                <option>Root Canal Therapy</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Preferred Date</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your concern or a preferred appointment date&hellip;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form-submit">Send Request</button>
+
+            <p class="form-note">We respect your privacy. Your information is never shared.</p>
+          </form>
+        </div>
+
+      </div>
     </section>
 
   </main>
@@ -468,8 +582,54 @@
   <!-- ══════════════════════════════════════
        FOOTER
   ══════════════════════════════════════ -->
-  <footer class="site-footer" id="footer">
-    <!-- populated in Step 5 -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+
+      <div class="site-footer__brand">
+        <a href="#top" class="site-header__logo site-footer__logo" aria-label="Back to top">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 4C14 4 8 9 8 15c0 3.5 1.5 6.5 3 9l2 8c.5 2 1.5 4 4 4s3.5-2 3-5l-.5-3.5c-.3-2 .8-3.5 0-3.5s.3 1.5 0 3.5L19 33c-.5 3 .5 5 3 5s3.5-2 4-4l2-8c1.5-2.5 3-5.5 3-9 0-6-6-11-12-11z" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">
+            <span class="logo-text__name">Dr. Yousef Abu Koush</span>
+            <span class="logo-text__sub">Dental Clinic</span>
+          </span>
+        </a>
+        <p class="site-footer__tagline">
+          Caring for your smile since 2004. Modern dentistry with a gentle, personal touch.
+        </p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <h3 class="site-footer__nav-heading">Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Dr. Yousef</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Book Appointment</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__contact">
+        <h3 class="site-footer__nav-heading">Contact</h3>
+        <address>
+          <p>14 Al-Nahda Street, Amman, Jordan</p>
+          <p><a href="tel:+96265550192">+962 6 555 0192</a></p>
+          <p><a href="mailto:info@abukoush-dental.com">info@abukoush-dental.com</a></p>
+        </address>
+        <p class="site-footer__hours">Sun&ndash;Thu: 9 AM &ndash; 7 PM &nbsp;|&nbsp; Fri&ndash;Sat: 10 AM &ndash; 3 PM</p>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Dr. Yousef Abu Koush Dental Clinic. All rights reserved.</p>
+        <p>Designed with care &mdash; built with vanilla HTML &amp; CSS.</p>
+      </div>
+    </div>
   </footer>
 
   <script>
@@ -486,6 +646,22 @@
         nav.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Dynamic year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form submission feedback
+    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (!this.checkValidity()) {
+        this.reportValidity();
+        return;
+      }
+      const btn = this.querySelector('.form-submit');
+      btn.textContent = 'Message Sent ✓';
+      btn.disabled = true;
+      btn.style.backgroundColor = 'var(--color-accent)';
     });
   </script>
 </body>
