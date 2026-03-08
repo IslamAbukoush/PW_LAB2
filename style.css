@@ -1,0 +1,165 @@
+/* =============================================
+   style.css — Dr. Yousef Abu Koush Dental Clinic
+   ============================================= */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
+/* ── CSS Custom Properties ── */
+:root {
+  /* Colors */
+  --color-primary:      #0077B6;   /* dental blue */
+  --color-primary-dark: #005A8E;
+  --color-primary-light:#E8F4FD;
+  --color-accent:       #00B4D8;
+  --color-white:        #FFFFFF;
+  --color-bg:           #F8FBFF;
+  --color-bg-alt:       #EEF6FC;
+  --color-text:         #1D2D44;
+  --color-text-muted:   #5A6A7A;
+  --color-border:       #C9DFF0;
+
+  /* Typography */
+  --font-heading: 'Merriweather', Georgia, serif;
+  --font-body:    'Lato', Arial, sans-serif;
+
+  /* Spacing */
+  --space-xs:   0.5rem;
+  --space-sm:   1rem;
+  --space-md:   2rem;
+  --space-lg:   4rem;
+  --space-xl:   6rem;
+
+  /* Layout */
+  --max-width: 1140px;
+  --radius:    6px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(0,119,182,0.10);
+  --shadow-md: 0 4px 18px rgba(0,119,182,0.13);
+  --shadow-lg: 0 8px 32px rgba(0,119,182,0.16);
+
+  /* Transitions */
+  --transition: 0.22s ease;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+/* ── Container ── */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ── Section base ── */
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+/* ── Section header ── */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.section-header__eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.section-header__title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.35;
+  margin-bottom: var(--space-sm);
+}
+
+.section-header__subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: background-color var(--transition), color var(--transition),
+              border-color var(--transition), box-shadow var(--transition);
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn--outline:hover,
+.btn--outline:focus {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* ── Divider ── */
+.divider {
+  width: 56px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+/* ── Utility ── */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
