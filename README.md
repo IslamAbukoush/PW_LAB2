@@ -6,7 +6,7 @@ A clean, professional landing page for **Dr. Yousef Abu Koush**, a practicing de
 
 ## Live Demo
 
-🔗 **[View Live Site](https://yourusername.github.io/PW_LAB2/)** ← _replace with your deployed URL_
+🔗 **[View Live Site](https://pw-lab-3.vercel.app/)** ← _replace with your deployed URL_
 
 ---
 
