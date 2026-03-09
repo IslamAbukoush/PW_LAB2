@@ -91,15 +91,6 @@ open index.html     # macOS
 
 ---
 
-## Deployment (GitHub Pages)
-
-1. Push the repository to GitHub
-2. Go to **Settings → Pages**
-3. Set source to the `main` branch, root folder
-4. Your site will be live at `https://yourusername.github.io/PW_LAB2/`
-
----
-
 ## Color Palette
 
 | Role | Hex |
